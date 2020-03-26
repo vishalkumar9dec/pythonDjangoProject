@@ -1,0 +1,16 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello {{name}} !!!! </h1>
+
+<form action="multiplied" method="post">
+    {% csrf_token %}
+    First Number : <input type="text", name="val1"><br><br>
+    Second Number : <input type="text", name="val2"><br><br>
+    <input type="submit" value="Multiply Numbers">
+
+</form>
+
+
+{% endblock %}
